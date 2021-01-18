@@ -1,0 +1,24 @@
+@import "../../style/variables";
+
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $primary-color;
+    padding: 20px $container-padding;
+    max-height: $header-height;
+    min-height: $header-height;
+
+    .Title {
+        text-align: left;
+        font-size: 19px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+}
+
+@media screen and (min-width: $container-max-width) {
+    .Header {
+        max-width: $container-max-width;
+    }
+}

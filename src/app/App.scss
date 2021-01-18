@@ -1,0 +1,28 @@
+@import "../style/variables";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding-top: $header-height;
+  max-height: 100vh;
+  height: 100vh;
+}
+
+.AppContainer {
+  margin: 0 auto;
+  max-width: $container-max-width;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: $container-max-width) {
+  .AppContainer {
+    border-left: 2px dashed $primary-color;
+    border-right: 2px dashed $primary-color;
+    border-bottom: 2px dashed $primary-color;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}

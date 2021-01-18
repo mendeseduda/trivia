@@ -1,0 +1,131 @@
+@import "../../style/variables";
+
+.Overview {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: stretch;
+}
+
+.HeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 35%;
+    width: 100%;
+
+    .Header {
+        margin-bottom: 65px;
+        margin-right: 40px;
+    }
+
+    .Title {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .SubTitle {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+.Performance {
+    position: relative;
+    width: 100%;
+    .Text {
+        background-color: #ffffff;
+        margin: 0 30px;
+        font-size: 13px;
+        text-align: center;
+        border: thin solid $primary-color;
+        border-radius: 4px;
+        padding: 10px;
+        color: $primary-color;
+        font-weight: 700;
+    }
+
+    $dotted-height: 2px;
+    .DottedLine {
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        border-top: $dotted-height dotted $primary-color;
+    }
+}
+
+.ScoreContainer {
+    display: flex;
+    text-align: center;
+    margin: 30px 60px;
+    background-color: #eff0f2;
+    border-radius: 12px;
+    padding: 10px 25px;
+    color: $primary-color;
+
+    .ScoreColumn {
+        flex: 1 1 50%;
+    }
+
+    .Spacer {
+        padding: 0 20px;
+    }
+
+    .Score {
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .ScoreText {
+        font-size: 13px;
+    }
+}
+
+.ScoreDifficulty {
+    display: flex;
+    margin-bottom: 20px;
+    
+    .ScoreDifficultyColumn {
+        flex-basis: calc(100%/3);
+        padding: 0 20px;
+
+        &:nth-of-type(2n) {
+            border-left: thin solid #b8bed5;
+            border-right: thin solid #b8bed5;
+        }
+
+        .Difficulty {
+            color: $primary-color;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .Score {
+            font-size: 14px;
+            color: $primary-color;
+        }
+    }
+}
+
+.BtnContainer {
+    text-align: center;
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.BackBtn {
+    background-color: #4d8af0;
+    outline: 0;
+    border: 0;
+    padding: 12.5px 50px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 14px;
+}

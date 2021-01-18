@@ -1,0 +1,61 @@
+@import "../../style/variables";
+
+.Trivia {
+    display: flex;
+    flex-direction: column;
+    padding: 15px $container-medium-padding;
+    height: 100%;
+}
+
+.QuestionHeader {
+    display: flex;
+    justify-content: space-between;
+
+    .Title {
+        font-size: 17px;
+        color: $primary-color;
+    }
+
+    .DifficultyContainer {
+        display: flex;
+        align-items: center;
+
+        padding: 1.5px 10px;
+        border-radius: 11px;
+        background-color: #d6d8de;
+
+        i {
+            color: #b0b0b0;
+        }
+
+        .Difficulty {
+            margin-left: 7px;
+            display: inline-block;
+            color: $primary-color;
+            font-size: 12px;
+        }
+    }
+}
+
+.Question {
+    margin: 15px 0;
+}
+
+.Options {
+    display: flex;
+    flex-direction: column;
+    margin: -7.5px 0;
+    min-height: 0;
+    flex-grow: 1 1 auto;
+    overflow-y: auto;
+
+    .Option {
+        margin: 7.5px 0;
+        border-radius: 12px;
+        border: thin solid #ccd1e1;
+        padding: 15px;
+        color: black;
+        box-shadow: 0px 1px 2px #dcdada;
+        cursor: pointer;
+    }
+}

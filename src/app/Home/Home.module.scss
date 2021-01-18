@@ -1,0 +1,41 @@
+@import "../../style/variables";
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0 20px 0;
+    height: 100%;
+    text-align: left;
+}
+
+.Title {
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 35px;
+    padding: 0 $container-padding;
+}
+
+.Categories {
+    display: flex;
+    flex-direction: column;
+    margin: -10px 0;
+    padding: 0 $container-padding;
+    min-height: 0;
+    flex: 1 1 auto;
+    overflow-y: auto;
+
+    .Category {
+        border-radius: 12px;
+        border: thin solid #ccd1e1;
+        color: $secondary-color;
+        background-color: #f6f6f6;
+        margin: 10px 0;
+        padding: 11px 5px;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        box-shadow: inset 0px -4px 3px #efefef, inset 0px -3px 1px #f0efef, 0 -1px 3px #efefef;
+        cursor: pointer;
+    }
+}
